@@ -99,16 +99,6 @@ Edit files in one pass with instructions via stdin<br/>
 
 </table>
 
-## Background
-
-What began as a simple todo-list editor and coding pastime has evolved, through night and weekend labour, into a published library of practical personal productivity tools. Some highlights:
-
-- Authored in Python using test-driven development
-- Leverages a shared code library ("WizLib") for reusable patterns and functionality
-- Fully automated DevOps pipeline for building and testing the apps, publishing documentation, and deploying packages to the public registry
-- Automated semantic version management
-- Fun and easy tools that improve my productivity every day
-
 <br/>
 
 <hr/>
@@ -116,8 +106,6 @@ What began as a simple todo-list editor and coding pastime has evolved, through 
 <br/>
 
 <div style="text-align:center;">
-
-Built and tested on <a href="https://github.com/SteamWiz" target="_blank">GitHub</a>.
 
 Proudly developed in <img src="Flag_of_Canada.svg" height=12pt/> Canada by <a href="https://fpotter.com" target="_blank">Francis Potter</a>.
 
