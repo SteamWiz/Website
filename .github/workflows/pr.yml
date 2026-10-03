@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+
+# Read-only: pull requests never need to write to the repository.
+permissions:
+  contents: read
+
+# One run per PR; a new push cancels the superseded run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Catch a broken site before merge; deployment happens from docs.yml on main.
+  docs:
+    uses: steamwiz/actions/.github/workflows/mdbook-build.yml@ci/split-pipeline
+    with:
+      # Keep in sync with docs.yml: theme/index.hbs is a customized mdBook 0.4
+      # template, and mdBook 0.5 can't render it.
+      mdbook-version: '0.4.49'
+      output-dir: html
