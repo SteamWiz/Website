@@ -15,7 +15,7 @@ concurrency:
 jobs:
   # Catch a broken site before merge; deployment happens from docs.yml on main.
   docs:
-    uses: steamwiz/actions/.github/workflows/mdbook-build.yml@ci/split-pipeline
+    uses: steamwiz/actions/.github/workflows/mdbook-build.yml@v1
     with:
       # Keep in sync with docs.yml: theme/index.hbs is a customized mdBook 0.4
       # template, and mdBook 0.5 can't render it.
